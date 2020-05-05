@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>rf0x1d > Projects</title>
+        <meta property="og:title" content="rf0x1d > Projects">
+        <meta property="og:locale" content="en_EU">
+        <meta property="og:description" content="rf0x1d's projects trashcan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/favico/eblan.png" type="image/png">
+		<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
+		<link rel="stylesheet" href="../assets/fonts/gsans/style.css">
+		<link rel="stylesheet" href="../assets/vars.css">
+        <meta name="theme-color" content="#C21CC7">
+		<link rel="stylesheet" href="../assets/css/projects/style.css">
+	</head>
+	<body class="center">
+        <div id="quotesapibot">
+            <div class="popup">
+                <h1>QuotesAPI Bot</h1>
+                <p align="center">                    
+                    <p align=center>
+						<b>QuotesAPI Bot</b> - Бот, изначально созданный для себя чисто потому что хотелось иметь под рукой инструмент для генерации цитат, интегрированный с моим API для цитат.
+						<br>
+						<br>
+						Бот на данный момент насчитывает около <b>500</b> чатов, <b>11000</b> сгенерированных цитат и около <b>500</b> стикерпаков с цитатами пользователей.
+					</p>
+                    <p align="center">
+						<input class="btn" type="button" value="Перейти" title="Перейти" onclick="location.href='http://rsdev.ml/telegram?username=quotesapi_bot'">
+						<input class="btn" type="button" value="Закрыть" title="Закрыть" onclick="document.getElementById('quotesapibot').style.display='none';">
+					</p>
+                </p>
+            </div>
+		</div>
+		<div id="rsapi">
+            <div class="popup">
+                <h1>rsAPI</h1>
+                <p align="center">                    
+                    <p align=center>
+						<b>rsAPI</b> - Сборник всяких API, преимущественно для ботов Telegram, разрабатываемый <b><a style="color: blueviolet; padding: 0ch;" href="http://vk.com/rfoxxxyzstudio" target="_blank" rel="noopener noreferrer">rfoxxxyz studio</a></b>.
+						<br>
+						<br>
+						На данный момент насчитывается около <b>12000</b> сгенерированных цитат и <b>1200</b> дистортнутых картинок.
+					</p>
+                    <p align="center">
+						<input class="btn" type="button" value="Перейти" title="Перейти" onclick="location.href='http://rsdev.ml/'">
+						<input class="btn" type="button" value="Закрыть" title="Закрыть" onclick="document.getElementById('rsapi').style.display='none';">
+					</p>
+                </p>
+            </div>
+		</div>
+		<div id="rspay">
+            <div class="popup">
+                <h1>rsPay</h1>
+                <p align="center">                    
+                    <p align=center>
+						<b>rsPay</b> - Платежная система для получения оплаты и массовых выплат в проектах, разрабатываемых <b><a style="color: blueviolet; padding: 0ch;" href="http://vk.com/rfoxxxyzstudio" target="_blank" rel="noopener noreferrer">rfoxxxyz studio</a></b>.
+						<br>
+						<br>
+						На данный момент имеет <b>3</b> подключенных проекта и находится в <b>закрытом</b> бета тесте.
+					</p>
+                    <p align="center">
+						<input class="btn" type="button" value="Перейти" title="Перейти" onclick="location.href='http://rspay.ml/'">
+						<input class="btn" type="button" value="Закрыть" title="Закрыть" onclick="document.getElementById('rspay').style.display='none';">
+					</p>
+                </p>
+            </div>
+        </div>
+        <audio autoplay loop id="player">
+            <source src="../assets/sounds/golosovanie.mp3">
+            <script>
+                document.currentScript.parentElement.volume = 0.50;
+            </script>
+        </audio>
+		<div class="center menu">
+            <h2>Projects</h2>
+			<a href="javascript:/" onclick="document.getElementById('quotesapibot').style.display='block'">QuotesAPI Bot</a>
+			<a href="javascript:/" onclick="document.getElementById('rsapi').style.display='block'">rsAPI</a>
+			<a href="javascript:/" onclick="document.getElementById('rspay').style.display='block'">rsPay</a>
+            <hr width="295">
+            <a href="..">Go back</a>
+		</div>
+    </body>
+    <script>
+		// ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
+        console.log('Пасхалка не работает идите нахуй')
+        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
+            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
+            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
+        }
+    </script>
+</html>

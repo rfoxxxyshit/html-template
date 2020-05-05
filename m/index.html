@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>rf0x1d</title>
+        <meta property="og:title" content="rf0x1d">
+        <meta property="og:locale" content="en_EU">
+        <meta property="og:description" content="rf0x1d's mobile main page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/favico/eblan.png" type="image/png">
+        <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
+        <link rel="stylesheet" href="../assets/fonts/gsans/style.css">
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="../assets/css/m/bootstrap.css">
+        <link rel="stylesheet" href="../assets/css/m/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../assets/vars.css">
+        <meta name="theme-color" content="#C21CC7">
+    </head>
+    <script>
+        var test = false
+        if (!test) {
+            function isMacintosh() {
+                return navigator.platform.indexOf('Mac') > -1
+            }
+
+            function isWindows() {
+                return navigator.platform.indexOf('Win') > -1
+            }
+
+            if(isMacintosh()|| isWindows()) {
+                window.location.replace("../")
+            }
+        }
+    </script>
+    <div id="page-preloader">
+        <span class="spin mdi mdi-loading mdi-spin"></span>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                var $preloader = $('#page-preloader'),
+                $spinner   = $preloader.find('.spin');
+                $spinner.delay(100).fadeOut('slow');
+                $preloader.delay(450).fadeOut('slow');
+            });
+        </script>
+    </div>
+    <body class="center blur">
+        <audio autoplay loop id="player">
+            <source src="../assets/sounds/golosovanie.mp3">
+            <script>
+                document.currentScript.parentElement.volume = 0.50;
+            </script>
+        </audio>
+        <header class="center info">
+            <div class="center pizdec">
+                <div class="avatar-container"><img src="../assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
+                <h2><span id="name"></span></h2>
+                <hr width="295">
+                <h3><span id="description"></span></h3>
+            </div>
+            <div class="center pizdec"><h2>Links</h2></div>
+            <div class="social linkMenu d-flex justify-content-center">
+                <a href="javascript://" onclick="location.href='http://rsdev.ml/telegram?username=rf0x1d'" class="mx-2 social-icon" data-tooltip="Telegram">
+                    <span class="mdi mdi-telegram"></span>
+                </a>
+                <a href="javascript://" onclick="location.href='https://vk.com/rfoxxxy'" class="mx-2 social-icon" data-tooltip="VK">
+                    <span class="mdi mdi-vk"></span>
+                </a>
+
+                <a href="javascript://" onclick="location.href='http://github.com/rfoxxxy'" class="mx-2 social-icon" data-tooltip="GitHub">
+                    <span class="mdi mdi-github-circle"></span>
+                </a>
+
+                <a href="javascript://" onclick="location.href='http://last.fm/user/rfoxxxy'" class="mx-2 social-icon" data-tooltip="Last.FM">
+                    <span class="mdi mdi-lastfm"></span>
+                </a>
+            </div>
+            <div class="center pizdec">
+                <h2>Some stuff</h2>
+            </div>
+            <div class="social linkMenu d-flex justify-content-center">
+                <a class="mx-2 social-icon" data-tooltip="Donate" href="#" data-toggle="modal" data-target="#donut">
+                    <span class="mdi mdi-heart-outline"></span>
+                </a>
+                <a href="javascript://" onclick="location.href='../projects'" class="mx-2 social-icon" data-tooltip="Projects">
+                    <span class="mdi mdi-folder-outline"></span>
+                </a>
+                <a href="javascript://" onclick="location.href='../modules'" class="mx-2 social-icon" data-tooltip="Modules">
+                    <span class="mdi mdi-folder-plus-outline"></span>
+                </a>
+            </div>
+            <div class="modal fade" id="donut" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title gsmedium" id="ModalLabel">Donate</h2>
+                            <a class="close" data-dismiss="modal" aria-label="Close"><span class="black clickable mdi mdi-24px mdi-close"></span></a>
+                        </div>
+                        <div class="modal-body black">
+                            <a href="javascript://" onclick="location.href='https://www.tinkoff.ru/sl/72Vwnssh9lF'" class="btn btn-donut pl-3 mb-3 mx-1">
+                                <span class="mdi mdi-credit-card-outline"></span>
+                                <span class="mx-2">Tinkoff</span>
+                            </a>
+                            <a href="javascript://" onclick="location.href='https://qiwi.com/n/rfoxxxy'" class="btn btn-donut pl-3 mb-3 mx-1">
+                                <span class="mdi mdi-coin"></span>
+                                <span class="mx-2">QIWI</span>
+                            </a>
+                            <a href="javascript://" onclick="location.href='https://yasobe.ru/na/rfoxxxy'" class="btn btn-donut pl-3 mb-3 mx-1">
+                                <span class="mdi mdi-wallet-outline"></span>
+                                <span class="mx-2">Ya.Money</span>
+                            </a>
+                            <a href="javascript://" onclick="location.href='https://www.donationalerts.com/r/reloadingfox'" class="btn btn-donut pl-3 mb-3 mx-1">
+                                <span class="mdi mdi-currency-rub"></span>
+                                <span class="mx-2">Donation Alerts</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+    <script>
+        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
+        $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
+        // ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
+        console.log('Пасхалка не работает идите нахуй')
+        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
+            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
+            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
+        }
+    </script>
+</html>

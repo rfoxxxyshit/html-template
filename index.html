@@ -1,227 +1,32 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>rfoxxxy</title>
-        <meta property="og:title" content="rfoxxxy">
+        <title>rf0x1d</title>
+        <meta property="og:title" content="rf0x1d">
         <meta property="og:locale" content="en_EU">
-        <meta property="og:description" content="rfoxxxy's main page">
+        <meta property="og:description" content="rf0x1d's main page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="assets/favico/eblan.png" type="image/png">
         <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
         <link rel="stylesheet" href="assets/fonts/gsans/style.css">
+        <link rel="stylesheet" href="assets/vars.css">
+        <link rel="stylesheet" href="assets/css/index/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <meta name="theme-color" content="#C21CC7">
-        <style>
-            :root {
-                --text-color: #000000;
-                --back-color: #fff3;
-                --over-color: #fefefe;
-                --border: none;
-                --back-gif: url('assets/anims/aye.gif');
-                --pasxalka: https://www.youtube.com/watch?v=_En5m2obLkU;
-            }
-
-            @media (prefers-color-scheme: dark) {
-                :root {
-                    --text-color: #fff;
-                    --back-color: #302c2c;
-                    --over-color: #302c2c;
-                    --border: solid;
-                    --back-gif: url('assets/anims/hack.gif');
-                    --pasxalka: https://natribu.org;
-                }
-            }
-
-            body {
-                width: 100%;
-                min-height: 100%;
-                margin: 0;
-                background: var(--back-gif) center;
-                background-size: cover;
-                display: flex;
-                font-family: 'Product Sans';
-            }
-            .center {
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-            }
-            .info {
-                min-width: 300px;
-                width: 300px;
-                display: flex;
-                background: var(--back-color);
-                padding: 35px;
-                color: var(--text-color);
-				border-radius: 16px; 
-				-webkit-border-radius: 16px;
-				-moz-border-radius: 16px;
-                -khtml-border-radius: 16px;
-                backdrop-filter: blur(15px);
-                -webkit-backdrop-filter: blur(15px);
-            }
-			.buttons {
-				min-width: 300px;
-				width: 300px;
-				display: flex;
-				padding: 0px;
-				border-radius: 8px; 
-				-webkit-border-radius: 8px;
-				-moz-border-radius: 8px;
-				-khtml-border-radius: 8px;
-			}
-			a {
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-				-moz-tap-highlight-color: rgba(0,0,0,0);
-				padding: 8px 20px; 
-				margin: 4px;
-				background: var(--back-color);
-				color: #fff;
-				cursor: pointer;
-				border-radius: 8px; 
-				-webkit-border-radius: 8px;
-				-moz-border-radius: 8px;
-				-khtml-border-radius: 8px;
-				width: 256px;
-				text-align: center;
-				text-decoration: none;
-				transition: .2s;
-                border: var(--border);
-            }
-            
-            .avatar-container {
-                margin: 0 0.4em 0 0;
-                display: inline-flex;
-                justify-content: center;
-                align-items: flex-end
-            }
-
-            .avatar {
-                width: 10em;
-                height: 10em;
-                border-radius: 5.6em;
-            }
-
-            .pizdec {
-                position: relative;
-                display: inline-flex;
-                padding: 0.3em;
-            }
-			
-			a:hover,
-            button:hover {
-				background: #fff6;
-			}
-
-            button:active, button:focus {
-  				outline: none;
-			}
-
-			button::-moz-focus-inner {
-  				border: 0;
-			}
-
-			button::-webkit-focus-inner {
-				border: 0;
-			}
-			
-			hr {
-                border: .5px #fff3 solid;
-            }
-            
-            h3 {
-                font-style: normal;
-                font-weight: inherit;
-                transition: .2ms;
-                -webkit-transition: .2ms;
-                -moz-transition: .2ms;
-            }
-
-            h2 {
-                font-size: larger;
-                transition: .2ms;
-                -webkit-transition: .2ms;
-                -moz-transition: .2ms;
-            }
-
-            #gitlink,
-            #donate {
-			    position: fixed;
-			    top: 0;
-			    left: 0;
-			    display: none;
-			    width: 100%;
-			    height: 100%;
-			    background: rgba(0, 0, 0, 0.65);
-			    z-index: 999;
-			    overflow: auto;
-			}
-			.popup {
-			    top: 10%;
-			    left: 0;
-			    right: 0;       
-			    font-size: 14px;
-			    margin: auto;
-			    width: 85%;
-			    min-width: 320px;
-			    max-width: 600px;
-			    position: absolute;
-			    padding: 15px 20px;
-			    border: 1px solid #383838;
-                background: var(--over-color);
-                color: var(--text-color);
-			    z-index: 1000;
-			    -webkit-border-radius: 14px;
-			    -moz-border-radius: 14px;
-			    -ms-border-radius: 14px;
-			    border-radius: 14px;
-			    font: 'Product Sans';
-			    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-			    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-			    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-			    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-			}
-            input[type=button] {
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-				-moz-tap-highlight-color: rgba(0,0,0,0);
-				padding: 12px 20px; 
-				background: rgb(115, 15, 124);
-				color: #fff;
-				border: 0 none;
-				cursor: pointer;
-				border-radius: 8px; 
-				-webkit-border-radius: 8px;
-				-moz-border-radius: 8px;
-				-khtml-border-radius: 8px;
-				margin-top: 5px;
-				margin-left: 5px;
-				margin-bottom: 2px;
-			}
-			
-			input[type=button]:hover {
-				background: rgb(85, 12, 92);
-			}
-
-			input[type=button]:active, input[type=button]:focus {
-                outline: none;
-			}
-
-			input[type=button]::-moz-focus-inner {
-  				border: 0;
-			}
-
-			input[type=button]::-webkit-focus-inner {
-				border: 0;
-			}
-
-            .btn {
-				-webkit-transition: 0.2s;
-				-o-transition: 0.2s;
-				-moz-transition: 0.2s;
-				transition: 0.2s;
-            }
-        </style>
+        
     </head>
     <body class="center">
+        <script>
+            var test = false;
+            if (!test) {
+                function isMobile() {
+                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+                }
+                if (isMobile()) {
+                    window.location.replace("m")
+                }
+            }
+        </script>
         <div id="donate">
             <div class="popup">
                 <h1>Donate</h1>
@@ -229,7 +34,7 @@
                     <h3><span class="font-size=larger">Отправляя донат, вы поддерживаете автора и оплачиваете ему ужин.</span></h3>                    
                     <h2>Select payment method</h2>
                     <p align="center">
-						<input type="button" class="btn" value="Rocketbank" onclick="location.href='https://rocketbank.ru/rf0x1d'">
+						<input type="button" class="btn" value="Tinkoff" onclick="location.href='https://www.tinkoff.ru/sl/72Vwnssh9lF'">
                         <input type="button" class="btn" value="QIWI" onclick="location.href='https://qiwi.com/n/rfoxxxy'">
                         <br>
 						<input type="button" class="btn" value="Ya.Money" onclick="location.href='https://yasobe.ru/na/rfoxxxy'">
@@ -261,50 +66,43 @@
         </audio>
         <header class="center info">
             <div class="center pizdec">
-                <div class="avatar-container"><img src="assets/anims/dolboeb.gif" class="avatar"></div>
-                <h2>rf0x1d</h2>
+                <div class="avatar-container"><img src="assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
+                <h2><span id="name"></span></h2>
                 <hr width="295">
-                <h3>Still alive...</h3>
+                <h3><span id="description"></span></h3>
                 <hr width="295">
                 <h2>Links</h2>
             </div>
             <div class="buttons">
-                <a href="javascript:/" onclick="location.href='http://rsdev.ml/telegram?username=rf0x1d'">Telegram</a>
-                <a href="javascript:/" onclick="location.href='https://vk.com/rfoxxxy'">VK</a>
-                <a href="javascript:/" onclick="location.href='https://last.fm/user/rfoxxxy'">LastFM</a>
+                <a href="javascript://" class="link" onclick="location.href='http://rsdev.ml/telegram?username=rf0x1d'">Telegram</a>
+                <a href="javascript://" class="link" onclick="location.href='https://vk.com/rfoxxxy'">VK</a>
+                <a href="javascript://" class="link" onclick="location.href='https://last.fm/user/rfoxxxy'">LastFM</a>
             </div>
             <div class="buttons">
-                <a href="javascript:/" onclick="location.href='http://rsdev.ml/telegram?username=rf0x3d'">Blog</a>
-                <a href="javascript:/" onclick="document.getElementById('gitlink').style.display='block'">Git</a>
+                <a href="javascript://" class="link" onclick="location.href='http://rsdev.ml/telegram?username=rf0x3d'">Blog</a>
+                <a href="javascript://" class="link" onclick="document.getElementById('gitlink').style.display='block'">Git</a>
             </div>
             <div class="buttons">
-                <a href="javascript:/" onclick="document.getElementById('donate').style.display='block'">Donate</a>
+                <a href="javascript://" class="link" onclick="document.getElementById('donate').style.display='block'">Donate</a>
             </div>
-            <hr width="15">
+            <hr width="295">
+            <div class="center pizdec">
+                <h2>Work</h2>
+            </div>
             <div class="buttons">
-                <a href="javascript:/" onclick="enableDark()">Switch Theme</a>
+                <a href="javascript://" class="link" onclick="location.href='projects'">Projects</a>
+                <a href="javascript://" class="link" onclick="location.href='modules'">Modules</a>
             </div>
         </header>
     </body>
     <script>
-        function enableDark() {
-            const color = getComputedStyle(document.body).getPropertyValue('--back-color')
-            const root = document.querySelector(':root')
-            if (color == '#fff3') {
-                root.style.setProperty('--back-color', '#302c2c')
-                root.style.setProperty('--over-color', '#302c2c')
-                root.style.setProperty('--text-color', '#fff')
-                root.style.setProperty('--border', 'solid')
-                root.style.setProperty('--back-gif', 'url("assets/anims/hack.gif")')
-            } else {
-                root.style.setProperty('--back-color', '#fff3')
-                root.style.setProperty('--over-color', '#fefefe')
-                root.style.setProperty('--text-color', '#000000')
-                root.style.setProperty('--border', 'none')
-                root.style.setProperty('--back-gif', 'url("assets/anims/aye.gif")')
-            }
+        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
+        $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
+        // ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
+        console.log('Пасхалка не работает идите нахуй')
+        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
+            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
+            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
         }
-        if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
-         window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
     </script>
 </html>

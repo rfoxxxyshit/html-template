@@ -1,88 +1,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-        <title>rfoxxxy > GIT</title>
-        <meta property="og:title" content="zlom zhopi">
+        <title>rf0x1d > Git</title>
+        <meta property="og:title" content="rf0x1d > Git">
         <meta property="og:locale" content="en_EU">
-        <meta property="og:description" content="ti kto">
+        <meta property="og:description" content="rf0x1d's Git pages">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/favico/eblan.png" type="image/png">
-        <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
+		<script src="https://sindresorhus.com/devtools-detect/index.js"></script>
+		<link rel="stylesheet" href="../assets/vars.css">
+		<link rel="stylesheet" href="../assets/fonts/gsans/style.css">
+		<link rel="stylesheet" href="../assets/css/git/style.css">
         <meta name="theme-color" content="#C21CC7">
-		<style>
-			@import url('../assets/fonts/gsans/style.css');
-
-			body {
-                width: 100%;
-                min-height: 100%;
-                margin: 0;
-                background: url('../assets/anims/aye.gif') center;
-                background-size: cover;
-                display: flex;
-                font-family: 'Product Sans';
-            }
-			.center {
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-			}
-			.menu {
-				min-width: 300px;
-				width: 300px;
-				display: flex;
-				background: #fff3;
-				padding: 15px;
-				border-radius: 16px; 
-				-webkit-border-radius: 16px;
-				-moz-border-radius: 16px;
-				-khtml-border-radius: 16px;
-				backdrop-filter: blur(15px);
-				-webkit-backdrop-filter: blur(15px);
-			}
-			a {
-				-webkit-tap-highlight-color: rgba(0,0,0,0);
-				-moz-tap-highlight-color: rgba(0,0,0,0);
-				padding: 8px 20px; 
-				margin: 4px;
-				background: #fff3;
-				color: #fff;
-				cursor: pointer;
-				border-radius: 8px; 
-				-webkit-border-radius: 8px;
-				-moz-border-radius: 8px;
-				-khtml-border-radius: 8px;
-				width: 256px;
-				text-align: center;
-				text-decoration: none;
-				transition: .2s;
-                border: 0ch;
-			}
-			
-			a:hover,
-            button:hover {
-				background: #fff6;
-			}
-
-            button:active, button:focus {
-  				outline: none;
-			}
-
-			button::-moz-focus-inner {
-  				border: 0;
-			}
-
-			button::-webkit-focus-inner {
-				border: 0;
-			}
-			
-			hr {
-				border: .5px #fff3 solid;
-			}
-
-            h2 {
-                font-size: larger;
-            }
-		</style>
 	</head>
 	<body class="center">
         <audio autoplay loop id="player">
@@ -100,7 +29,11 @@
 		</div>
     </body>
     <script>
-        if(window.devtools.isOpen) { window.location.href = "https://www.youtube.com/watch?v=_En5m2obLkU"; }
-        window.addEventListener('devtoolschange', event => { window.location.href = "https://www.youtube.com/watch?v=_En5m2obLkU"; });
+		// ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
+        console.log('Пасхалка не работает идите нахуй')
+        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
+            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
+            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
+        }
     </script>
 </html>

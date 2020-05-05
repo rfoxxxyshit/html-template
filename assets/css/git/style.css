@@ -1,0 +1,76 @@
+/* git page styles */
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background: var(--back-gif) center;
+    background-size: cover;
+    display: flex;
+    font-family: 'Product Sans';
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu {
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    background: none;
+    color: white;
+    padding: 15px;
+    border-radius: 16px; 
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -khtml-border-radius: 16px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: blueviolet solid 1px;
+}
+a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    padding: 8px 20px; 
+    margin: 4px;
+    background: #fff3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    width: 256px;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s;
+    border: 0ch;
+}
+
+a:hover,
+button:hover {
+    background: #fff6;
+    color: blueviolet;
+}
+
+button:active, button:focus {
+      outline: none;
+}
+
+button::-moz-focus-inner {
+      border: 0;
+}
+
+button::-webkit-focus-inner {
+    border: 0;
+}
+
+hr {
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: larger;
+}
