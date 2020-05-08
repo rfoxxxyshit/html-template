@@ -48,6 +48,17 @@
 ИДИ НАХУЙ
 -->
     <script>
+        function is_shit() {
+            if (/MSIE/i.test(navigator.userAgent)) return true
+            if (/firefox/i.test(navigator.userAgent)) return true
+            if (/Trident/i.test(navigator.userAgent)) return true
+            if (/Edge/i.test(navigator.userAgent)) return true
+            return false
+        }
+        if (is_shit()) {
+            alert("ПОСТАВЬ ХРОМ ЕБЛАН")
+            window.open('https://www.google.com/intl/ru/chrome/', '_blank');
+        }
         console.log("ИДИ НАХУЙ")
         console.log("ИДИ НАХУЙ")
         console.log("ИДИ НАХУЙ")

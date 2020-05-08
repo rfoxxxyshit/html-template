@@ -15,10 +15,14 @@
 	</head>
 	<body class="center">
         <script>
-            function is_firefox() {
-                return /firefox/i.test(navigator.userAgent)
+            function is_shit() {
+                if (/MSIE/i.test(navigator.userAgent)) return true
+                if (/firefox/i.test(navigator.userAgent)) return true
+                if (/Trident/i.test(navigator.userAgent)) return true
+                if (/Edge/i.test(navigator.userAgent)) return true
+                return false
             }
-            if (is_firefox()) {
+            if (is_shit()) {
                 document.body.style.backgroundImage = "url('../assets/anims/aye.gif')";
             }
         </script>
