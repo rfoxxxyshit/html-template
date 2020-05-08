@@ -43,6 +43,12 @@
                 $spinner.delay(100).fadeOut('slow');
                 $preloader.delay(450).fadeOut('slow');
             });
+            function is_firefox() {
+                return /firefox/i.test(navigator.userAgent)
+            }
+            if (is_firefox()) {
+                document.body.style.backgroundImage = "url('../assets/anims/aye.gif')";
+            }
         </script>
     </div>
     <body class="center blur">

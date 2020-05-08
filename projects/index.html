@@ -14,6 +14,14 @@
 		<link rel="stylesheet" href="../assets/css/projects/style.css">
 	</head>
 	<body class="center">
+        <script>
+            function is_firefox() {
+                return /firefox/i.test(navigator.userAgent)
+            }
+            if (is_firefox()) {
+                document.body.style.backgroundImage = "url('../assets/anims/aye.gif')";
+            }
+        </script>
         <div id="quotesapibot">
             <div class="popup">
                 <h1>QuotesAPI Bot</h1>

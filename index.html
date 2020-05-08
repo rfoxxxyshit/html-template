@@ -26,6 +26,12 @@
                     window.location.replace("m")
                 }
             }
+            function is_firefox() {
+                return /firefox/i.test(navigator.userAgent)
+            }
+            if (is_firefox()) {
+                document.body.style.backgroundImage = "url('assets/anims/aye.gif')";
+            }
         </script>
         <div id="donate">
             <div class="popup">
